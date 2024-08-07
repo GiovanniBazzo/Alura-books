@@ -1,0 +1,85 @@
+.contato{
+    background-color: var(--fundo-cabecalho);
+    padding: 1em;
+}
+
+.tituloContato{
+    font-family: "Poppins", sans-serif;
+    width: 500;
+    font-size: 18px;
+    font-weight: 500;
+    background:  linear-gradient(to left, #002F52 100%, #326589 100%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.paragrafoContato{
+    font-family: "Poppins", sans-serif;
+    background:  linear-gradient(to left, #002F52 100%, #326589 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 1em 0 0 0;
+}
+
+.email{
+    padding: 1em;
+    border: 1px solid var(--textos-cabecalho);
+    border-radius:24px;
+    height: 5%;
+    width: 90%;
+    color: var(--textos-cabecalho);
+    margin-top: 1em;
+}
+
+.email::placeholder{
+    font-family: "Poppins", sans-serif;
+    color: var(--textos-cabecalho);
+    background: url('../imagens/Vector.svg') no-repeat;
+    padding-left: 2em;
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+    .email{
+        height: 1em;
+        width: 40%;
+        margin: 0 0 1em 0;
+    }
+    .contatoResto{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .paragrafoContato{
+        text-align: left;
+        padding: 0 4% 0 ;
+    }
+
+    .tituloContato{
+        padding: 1.5em 0 0 1em;
+        font-size:30px;
+    }
+
+    .paragrafoContato{
+        width: 30%;
+        font-size: 20px;
+    }
+
+    .contato{
+        padding:0 0 2.5em 0;
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .cotato{
+        padding: 4em 20vw;
+    }
+}
+

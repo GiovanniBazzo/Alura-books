@@ -1,0 +1,148 @@
+.cabecalhoMenu{
+    width: 30px;
+    height: 24px;
+    background-image: url(../imagens/Menu\ Aberto.svg);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.botao:checked ~ .label_menu > .cabecalhoMenu{ 
+    background-image: url('../imagens/Menu\ Aberto.svg');
+}
+
+.cabecalho{
+    background-color: var(--fundo-cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.container-imagem, .container-imagemfavorito{
+    padding: 1em ;
+}
+
+.listaMenu{
+     font-family: "Poppins", sans-serif;
+    width: 55vw;
+    display: none;
+    position: absolute;
+     top: 100%
+}
+
+
+.botao:checked ~ .listaMenu{
+    display: block;
+}
+
+.listaMenuTitulo,
+ .listaMenuItem{
+    font-family: "Poppins", sans-serif;
+    padding: 1em ;
+    background-color: var(--fundo-cabecalho) ;
+}
+
+.listaMenuTitulo{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: var(--laranja);
+}
+
+.listaMenuItemLink{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var( --textos-cabecalho);
+    text-decoration: none;
+}
+
+.botao{
+    display: none;
+}
+
+.container_titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+.container_texto{
+    font-family: "Poppins", sans-serif;
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .container_titulo, .container_titulo_negrito{
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 30px;
+    }
+
+    .container_titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container_titulo_negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .itens{
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+    
+    .itens_link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container-imagemfavorito{
+        display: none;
+    }
+
+    .cabecalhoMenu{
+        display: none;
+    }
+
+    .opcoes_botoes:checked ~ .listaMenu{
+        display: block;
+        width: auto;
+    }
+
+    .opcoes_botoes{
+        display: none;
+    }
+}
+    
+@media screen and (min-width: 1250px){
+
+.container_icones{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--preto);
+    }
+
+    .cabecalho{
+        padding: 0 2em;
+    }
+    .container_texto{
+        display: block;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+}

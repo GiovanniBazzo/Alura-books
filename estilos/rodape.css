@@ -1,0 +1,70 @@
+hr{
+    margin: 0;
+}
+.rodape{
+    background-color: var(--fundo-cabecalho);
+    padding: 1em;
+}
+
+.tituloCabecalho{
+    font-family: "Poppins", sans-serif;
+    color:var(--textos-cabecalho) ;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.lista_rodape{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista_rodape_titulo{
+        font-family: "Poppins";
+        text-transform: uppercase;
+       color:var(--titulo-rodape);
+       font-size: 14px;
+       font-weight: 400;
+    }
+
+    .lista_rodape_item{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .lista_rodape_item_texto{
+        text-decoration: none;
+        font-family: "Poppins";
+        font-size: 14px;
+        font-weight: 400;
+        color:var(--fonte-rodape);
+        margin-left: 0.6em;
+        font-weight: 400;
+    }
+
+    .tituloCabecalho{
+        font-family: "Poppins", sans-serif;
+        color: var(--preto);
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    .lista_rodape{
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1250px){
+    .lista_rodape{
+        border-left: 1px solid var(--titulo-rodape);
+        padding-left: 1em;
+    }
+}
+

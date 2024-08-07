@@ -1,0 +1,58 @@
+.visitadosRecentemente{
+    background-image: linear-gradient(to left, #002F52 100%, #326589 100%);
+   text-align: center;
+   font-family: "Poppins";
+   color: var(--fundo-cabecalho);
+   font-weight: 300;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
+.tituloVisitado{
+    padding: 1em;
+}
+
+.listaTopicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topicos{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--fundo-cabecalho);
+    padding: 1em;
+    background-color: var(--laranja);
+}
+
+.topico{
+    margin: 2em 0.5em;
+}
+
+@media screen and (min-width: 1024px){
+    .tituloVisitado{
+        font-size: 24px;
+    }
+
+    .topicos{
+        font-size: 24px;
+    }
+
+    .topico{
+        font-size: 24px;
+
+    }
+}
+
+@media screen and (min-width: 1250px){
+    .listaTopicos{
+        padding: 2em 15vw;
+
+    }
+
+    .tituloVisitado{
+        padding: 1.5em 0 1em 0;
+    }
+}
